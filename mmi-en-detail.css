@@ -1,0 +1,152 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    /* border: red 1px solid; */
+}
+
+.fil-ariane{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin: 50px 70px;
+    color: #737373;
+}
+
+.fil-ariane a{
+    text-decoration: none;
+    color: #1B1B1B;
+    padding: 0 5px;
+}
+
+.fil-ariane a:hover{
+    color: #6A5ADF;
+}
+
+.bloc-detail-intro{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+    padding: 20px;
+    font-family: 'Montserrat';
+    color: #1B1B1B;
+}
+
+.box-texte-detail{
+    width: 50%;
+}
+
+.box-texte-detail h1{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #6A5ADF;
+    margin: 50px 0;
+}
+
+.detail-image{
+    width: 340px;
+}
+
+.grid{ 
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    padding: 50px;
+    align-items: stretch;
+}
+
+.grid>div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    border-radius: 20px;
+    height: fit-content;
+}
+
+.text{
+    padding: 0 20px 20px;
+}
+
+.text h2{
+    font-family: 'Raleway', sans-serif;
+    color: #6A5ADF;
+    margin: 20px 0;
+}
+
+
+.bloc-detail-conclu{
+    margin: 30px;
+    border-top: 1px solid #1B1B1B;
+}
+
+.bloc-detail-conclu h1{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    color: #6A5ADF;
+    margin: 50px 0;
+}
+
+.bloc-detail-conclu p{
+    margin: 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #1B1B1B;
+}
+
+
+@media only screen and (max-width: 768px){
+    .bloc-detail-intro{
+       flex-direction: column;
+    }
+    .box-texte-detail{
+        width: 100%;
+    }
+    .detail-image{
+        width: 280px;
+    }
+    .grid{ 
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Bouton */
+.btn-metiers{
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 1px solid #ABA2F1;
+    padding: 10px;
+    transition: all 0.5s ease;
+    cursor:pointer;
+    text-decoration: none;
+    text-align: center;
+    color: #ABA2F1;
+    display: block;
+    width: 300px;
+    margin: 50px auto;
+}
+
+.btn-decouvrir:hover, button:hover {
+    color: #FEFEFE;
+}
+
+.btn-decouvrir:active, button:active {
+    outline: 0;
+    color: #FEFEFE;
+}
+
+.btn-slide-left {
+    background: linear-gradient(to left, transparent 50%, #6A5ADF 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+.btn-slide-left:hover {
+    background-position: left bottom;
+}

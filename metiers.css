@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.fil-ariane{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin: 50px 70px;
+    color: #737373;
+}
+
+.fil-ariane a{
+    text-decoration: none;
+    color: #1B1B1B;
+    padding: 0 5px;
+}
+
+.fil-ariane a:hover{
+    color: #6A5ADF;
+}
+
+main{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.titre-metier{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3em;
+    color: #6A5ADF;
+}
+
+
+/* Métier */
+
+.bloc-metiers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-metier{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    width: 90vw;
+    margin: 50px 0;
+    height: fit-content;
+}
+
+.card-metier:nth-child(2n){
+    flex-direction: row-reverse;
+}
+
+.metier-image{   
+    width: 350px;
+}
+
+.metier-image img{
+    width: 100%;
+}
+
+.metier-titre{
+    font-family: 'Raleway', sans-serif;
+    color: #6A5ADF;
+    margin: 10px 0;
+}
+
+.metier-texte-conteneur{
+    width: 60%;
+}
+
+/* Bouton */
+
+.btn-enseignants{
+    border-radius: 40px;
+    background-color: transparent;
+    border: 1px solid #ABA2F1;
+    padding: 15px;
+    margin: 40px;
+    transition: all 0.5s ease;
+    cursor:pointer;
+    text-decoration: none;
+    text-align: center;
+    color: #ABA2F1;
+    display: block;
+    width: 350px;
+}
+
+.btn-decouvrir:hover, button:hover {
+    color: #FEFEFE;
+}
+
+.btn-decouvrir:active, button:active {
+    outline: 0;
+    color: #FEFEFE;
+}
+
+.btn-slide-left{
+    background: linear-gradient(to left, transparent 50%, #6A5ADF 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+.btn-slide-left:hover {
+    background-position: left bottom;
+    color: #FEFEFE;
+}
+
+@media only screen and (max-width: 768px){
+    .card-metier{
+        flex-direction: column;
+        width: 80vw;
+    }
+
+    .metier-image{   
+        width: 100%;
+    }
+    
+    .metier-image img{
+        width: 100%;
+    }
+
+    .metier-texte-conteneur{
+        width: 100%;
+    }
+    
+    .card-metier:nth-child(2n){
+        flex-direction: column;
+    }
+
+}

@@ -1,0 +1,212 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    /* border: red 1px solid; */
+}
+
+body{
+    background-color: #FEFEFE;
+    padding: 0;
+    margin: 0;
+}
+
+@media only screen and (max-width: 576px){
+    body p{
+        font-size: 0.85em;
+    }
+}
+
+.fil-ariane{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin: 50px 70px;
+    color: #737373;
+}
+
+.fil-ariane a{
+    text-decoration: none;
+    color: #1B1B1B;
+    padding: 0 5px;
+}
+
+.fil-ariane a:hover{
+    color: #6A5ADF;
+}
+
+/* partie 1 ------------------------------------------------------------------------------------------------- */
+
+.partie-propos-1{
+    /* border: solid #6A5ADF; */
+    width: 90%;
+    display: flex;
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+.partie-propos-1 h1{
+    color: #6A5ADF;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    font-size: 3.5em;
+}
+
+.partie-propos-1 p{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    margin-top: 5%;
+    width: 50vw;
+    font-size: 1,11em;
+}
+
+.partie-propos-1 img{
+    width: 30vw;
+    margin-left: 5%;
+}
+
+.contenu-partie-propos-1{
+    width: 60vw;
+}
+
+.contenu-partie-propos-1 h1{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.5em;
+    color: #6A5ADF;
+    margin: 50px 0;
+}
+
+/* partie 2 ------------------------------------------------------------------------------------------------- */
+
+.partie-propos-2{
+    /* border: solid #6A5ADF; */
+    width: 90%;
+    height: 35vh;
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+    /* margin-bottom: 10%; */
+}
+
+.partie-propos-2 p{
+    /* border: solid #F9CF57; */
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+
+    width: 54vw;
+    font-size: 1,11em;
+}
+
+.partie-propos-2 img{
+    margin-right: 5%;
+    /* border: solid #db57f9; */
+
+}
+
+
+/* partie 3 ------------------------------------------------------------------------------------------------- */
+.partie-propos-3{
+    /* border: solid #00ff3c; */
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.partie-propos-3 h2{
+    /* border: solid #df5adb; */
+    text-align: center;
+    margin-bottom: 2%;
+    width: 100%;
+    height: 5vh;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2,66em;
+    color: #6A5ADF;
+}
+
+.partie-propos-3-contenu{
+    /* border: solid #6A5ADF; */
+    margin: auto;
+    margin-bottom: 5%;
+    max-width: 1200px;
+    background-color: white;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 8px;
+}
+
+.partie-propos-3-contenu h3{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 2,66em;
+}
+
+.etudiant{
+    margin: auto 10%;
+    text-align: center;
+}
+
+figcaption {
+    font-size: 0.8em;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.etudiant img{
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .partie-propos-1{
+        flex-direction: column;
+    }  
+
+    .partie-propos-2{
+        flex-direction: column;
+    }  
+  
+
+    .partie-propos-3-contenu{
+        grid-template-columns: 1fr;
+    }  
+
+    .partie-propos-1 p{
+        width: 90vw;
+    }
+
+    .partie-propos-2 p{
+        width: 90vw;
+    }
+
+    .partie-propos-1 h1{
+        margin: 35% 0 10% 0;
+        font-size: 2em;
+    }
+
+    .partie-propos-1 img{
+        width: 90vw;
+        margin: 10% 0;
+    }
+
+    .partie-propos-2 img{
+        width: 100%;
+    }
+
+    .bloc{
+        height: 140vh;
+    }
+    
+    .etudiant img{
+        width: 75%;
+    }
+
+}

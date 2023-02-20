@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+main{
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px;
+}
+
+main h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #6A5ADF;
+    margin: 30px;
+}
+
+main h2{
+    margin: 20px 0;
+}
+
+main a{
+    color: #6A5ADF;
+    text-decoration: none;
+}
+
+main a:hover{
+    font-weight: bold;
+    cursor: pointer;
+}

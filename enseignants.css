@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.fil-ariane{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin: 50px 70px;
+    color: #737373;
+}
+
+.fil-ariane a{
+    text-decoration: none;
+    color: #1B1B1B;
+    padding: 0 5px;
+}
+
+.fil-ariane a:hover{
+    color: #6A5ADF;
+}
+
+.container{
+    font-family: 'Montserrat', sans-serif;
+    padding: 60px;
+}
+
+.container h1{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2.5em;
+    color: #6A5ADF;
+    margin: 50px 0;
+}
+
+.bloc-enseignants{
+    height: fit-content;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-enseignant{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 60px;
+    padding: 50px
+}
+
+.card{
+    height: fit-content;
+    padding: 10px;
+    background: #FEFEFE;
+    position: relative;
+    overflow: visible;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+   
+.card-img{
+    height: 350px;
+    margin: 20px auto;
+    transition: .3s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+   
+.card-info{
+    padding: 20px;
+}
+   
+.nom-enseignant{
+    font-weight: bold;
+    color: #6A5ADF;
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+   
+.matiere-enseignant{
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1200px){
+    .bloc-enseignants{
+        margin: 0;
+        height: fit-content;
+    }
+    .card-enseignant{
+        grid-template-columns: 1fr;
+    }
+    .bloc-enseignants p{
+        font-size: 0.85em;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .card{
+        margin: 0 10px;
+    }
+    
+}
+
+@media only screen and (max-width: 415px){
+    .bloc-enseignants p{
+        font-size: 0.75em;
+    }
+    .card{
+        margin: 0;
+    }
+    .card-img{
+        height: 100px;
+    }
+}
+
+.btn-matieres{
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 40px;
+    background-color: transparent;
+    border: 1px solid #ABA2F1;
+    padding: 10px;
+    transition: all 0.5s ease;
+    cursor:pointer;
+    text-decoration: none;
+    text-align: center;
+    color: #ABA2F1;
+    display: block;
+    width: 320px;
+    margin: 50px auto;
+}
+
+.btn-decouvrir:hover, button:hover {
+    color: #FEFEFE;
+}
+
+.btn-decouvrir:active, button:active {
+    outline: 0;
+    color: #FEFEFE;
+}
+
+.btn-slide-left {
+    background: linear-gradient(to left, transparent 50%, #6A5ADF 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+
+.btn-slide-left:hover {
+    background-position: left bottom;
+}

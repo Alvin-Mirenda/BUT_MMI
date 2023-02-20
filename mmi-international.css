@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    /* border: red 1px solid; */
+}
+
+.fil-ariane{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    margin: 50px 70px;
+    color: #737373;
+}
+
+.fil-ariane a{
+    text-decoration: none;
+    color: #1B1B1B;
+    padding: 0 5px;
+}
+
+.fil-ariane a:hover{
+    color: #6A5ADF;
+}
+
+main{  
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bloc-mmi-international{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1D1D1D;
+    padding: 30px;
+    margin-top: 15vh;
+}
+
+.bloc-mmi-international>div{
+    display: flex;
+    align-items: center;
+}
+
+.ctnt-main{
+    width: 75vw;
+    padding: 40px;
+}
+
+.ctnt-main h1{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3.5em;
+    color: #6A5ADF;
+    margin: 50px 0;
+}
+
+.ctnt-main h2{
+    font-size: 2em;
+    color: #6A5ADF;
+    margin: 20px 0;
+}
+
+.ctnt-main-img{
+    text-align: center;
+    width: 50%;
+}
+
+.ctnt-main-img img{
+    width: 100%;
+    padding: 20px;
+}
+
+.grid{ 
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    padding: 50px;
+    align-items: stretch;
+}
+
+.grid>div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    border-radius: 20px;
+    height: fit-content;
+}
+
+.text{
+    padding: 0 20px 20px;
+}
+
+.text h3{
+    font-family: 'Raleway', sans-serif;
+    color: #6A5ADF;
+    margin: 20px 0;
+}
+
+@media only screen and (max-width: 768px){
+    .bloc-mmi-international{
+        padding: 10px;
+        margin-top: 5vh;
+    }
+    .bloc-mmi-international>div{
+        flex-direction: column;
+    }
+    .ctnt-main{
+        width: 100vw;
+    }
+    .ctnt-main-img{
+        width: 100%;
+    }
+    .grid{ 
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .ctnt-main h1{
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 415px){
+}
+
+.mmi-etrangers{
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px;
+}
+
+.mmi-etrangers h2{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    color: #6A5ADF;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.mmi-etrangers div{
+    width: 80vw;
+    margin: auto;
+}
+
+.mmi-etrangers p{
+    padding: 20px;
+}
+
+.mmi-etrangers a{
+    color: #6A5ADF;
+    text-decoration: none;
+}
+
+.mmi-etrangers a{
+    font-weight: bold;
+}
